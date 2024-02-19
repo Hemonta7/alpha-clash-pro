@@ -8,6 +8,10 @@ function common1(element){
     secondSection.classList.remove('hidden');
 }
 
+function setBackgroundById(element){
+    const setBackground=document.getElementById(element);
+    setBackground.classList.add('bg-yellow-500');
+}
 
 
 function getARandomAlphabet(){

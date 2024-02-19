@@ -7,7 +7,12 @@
 
 function continueGame(){
     const alphabet=getARandomAlphabet();
-    console.log(alphabet);
+    // console.log(alphabet);
+
+    const currentAlphabet=document.getElementById("currentAlphabet");
+    currentAlphabet.innerText=alphabet;
+
+    setBackgroundById(alphabet);
 }
 
 
