@@ -44,7 +44,7 @@
                     <kbd id="t" class="kbd">t</kbd>
                     <kbd id="y" class="kbd">y</kbd>
                     <kbd id="u" class="kbd">u</kbd>
-                    <kb  id="d" class="kbd">i</kbd>
+                    <kbd id="i" class="kbd">i</kbd>
                     <kbd id="o" class="kbd">o</kbd>
                     <kbd id="p" class="kbd">p</kbd>
                 </div>
@@ -74,20 +74,21 @@
                 <button class="btn rounded-full bg-[#894189] text-white">
                     life
                     <img src="./icons/dollar.svg" alt="">
-                    <span>1</span>
+                    <span id="currentLife">5</span>
                 </button>
                 <button class="btn rounded-full bg-[#360490] text-white">
                     score
                     <img src="./icons/heart.svg" alt="">
-                    <span>1</span>
+                    <span id="currentScore">0</span>
                 </button>
             </div>
            </div>
         </section>
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="score" class="score flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 bg-[rgba(255,255,255,0.07)] p-5 rounded-lg">
-                <h1 class="text-5xl"><span class="font-extrabold">Score :</span><span> 14</span></h1>
-                <button class="btn bg-white text-black">play Again</button>
+                <h4>Game over!</h4>
+                <h1 class="text-5xl"><span class="font-extrabold">Score : </span><span id="lastScore">0</span></h1>
+                <button onclick="play()" class="btn bg-white text-black">play Again</button>
                 <p class="text-2xl font-medium">Practice will make you Pro</p>
             </div>
         </section>
